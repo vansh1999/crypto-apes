@@ -11,7 +11,7 @@
 
 # image
 # https://miro.medium.com/max/488/1*SgcqAN2Z6aA2boKwABhhBw.png
-# #Remembert-
+# #Remember-
 # Choco-chips for the above problem(image) is indicated by green lines and the array containing solution is written in green.
 
 
