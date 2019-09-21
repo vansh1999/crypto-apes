@@ -1,3 +1,21 @@
+# #Problem Statement-
+
+# A two-dimensional array (matrix) of potentially unequal height and width containing only 0s and 1s. Here 1 represents choco-chip and 0 is not a choco-chip.
+# Problem is to find the number of choco-chips in the given matrix.
+# A choco chip consists of any number of 1s that are either horizontally or vertically adjacent (but not diagonally). The number of adjacent 1s forming a line determines the size of the choco-chip.
+# Write a function that returns an array of the sizes of all different choco-chips present in the input matrix.
+
+# #points to remember-
+# 1 . If a 1 is already considered in a choco-chip, it cannot be considered again as indicated by a red line in the above image.
+# 2 . Diagonal elements are not considered as an adjacent element as indicated by a red line in the above image.
+
+# image
+# https://miro.medium.com/max/488/1*SgcqAN2Z6aA2boKwABhhBw.png
+# #Remembert-
+# Choco-chips for the above problem(image) is indicated by green lines and the array containing solution is written in green.
+
+
+# code here -- >
 
 t = int(input("Enter the number of rows: "))
 h = int(input("Enter the number of cols: "))
