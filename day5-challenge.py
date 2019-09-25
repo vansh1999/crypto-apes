@@ -11,4 +11,6 @@ for i in range(1,n):
             arr[j] , arr[j+1] = arr[j+1], arr[j]
 
 
-print(arr[-1])
+# best score is least time so , instead so 66 best is first element of array
+print(arr[0])
+
