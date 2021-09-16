@@ -59,6 +59,10 @@ function App() {
             name={fc.name}
             symbol={fc.symbol}
             current_price={fc.current_price}
+            image={fc.image}
+            market_cap={fc.market_cap}
+            total_volume={fc.total_volume}
+            price_change={fc.price_change_percentage_24h}
             />
           )
         })
