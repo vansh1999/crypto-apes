@@ -1,4 +1,5 @@
 import React from "react";
+import "./Crypto.css";
 
 const Crypto = ({
   name,
@@ -10,27 +11,42 @@ const Crypto = ({
   price_change
 }) => {
   return (
-    <div>
-      <div>
-        {name}
+    <div className="crypto-container">
+      <div className="crypto-row">
+        <div className="name">
+          {name}
+        </div>
+        <div className="symbol">
+          {symbol}
+        </div>
+        <div className="image">
+          <img src={image} />
+        </div>
+
+        <div className="crypto-data">
+          <div className="price">
+            ${current_price}
+          </div>
+
+          <div>
+            {price_change < 0
+              ? <div className="percent-change red">
+                  {price_change.toFixed(2)}%
+                </div>
+              : <div className="percent-change green">
+                  {price_change.toFixed(2)}%
+                </div>}
+          </div>
+
+          <div>
+            Mkt Cap: ${market_cap.toLocaleString()}
+          </div>
+          <div>
+            Tot Vol: ${total_volume}
+          </div>
+          <button>Add to Favorite</button>
+        </div>
       </div>
-      <div>
-        {symbol}
-      </div>
-      <div>
-        {current_price}
-      </div>
-      <img src={image} />
-      <div>
-        {price_change}
-      </div>
-      <div>
-        mrk cap - {market_cap}
-      </div>
-      <div>
-        vol - {total_volume}
-      </div>
-      <div>------------------</div>
     </div>
   );
 };
